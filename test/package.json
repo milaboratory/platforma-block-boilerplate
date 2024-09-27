@@ -1,0 +1,20 @@
+{
+  "name": "@milaboratory/milaboratories.block-boilerplate.test",
+  "private": true,
+  "version": "1.0.1",
+  "description": "Block tests",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "files": [],
+  "keywords": [],
+  "dependencies": {
+    "this-block": "workspace:@milaboratory/milaboratories.block-boilerplate@*"
+  },
+  "devDependencies": {
+    "@milaboratory/sdk-test": "catalog:",
+    "vitest": "catalog:",
+    "typescript": "catalog:"
+  }
+}
