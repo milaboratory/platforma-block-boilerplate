@@ -16,7 +16,7 @@ export const platforma = BlockModel.create<BlockArgs>('Heavy')
     argument: 'World',
   })
 
-  .output( 'transformedArg', (ctx) => ctx.outputs?.resolve({
+  .output('transformedArg', (ctx) => ctx.outputs?.resolve({
     field: 'transformedArg',
       assertFieldType: 'Input',
   })?.getDataAsJson<any>())
