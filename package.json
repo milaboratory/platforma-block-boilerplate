@@ -1,5 +1,5 @@
 {
-  "name": "@milaboratory/milaboratories.block-boilerplate",
+  "name": "@pl-open/my-org.block-boilerplate",
   "version": "1.0.0",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
@@ -10,29 +10,29 @@
     "index.js"
   ],
   "dependencies": {
-    "@milaboratory/milaboratories.block-boilerplate.workflow": "workspace:*",
-    "@milaboratory/milaboratories.block-boilerplate.model": "workspace:*",
-    "@milaboratory/milaboratories.block-boilerplate.ui": "workspace:*"
+    "@pl-open/my-org.block-boilerplate.workflow": "workspace:*",
+    "@pl-open/my-org.block-boilerplate.model": "workspace:*",
+    "@pl-open/my-org.block-boilerplate.ui": "workspace:*"
   },
   "block": {
     "components": {
-      "workflow": "@milaboratory/milaboratories.block-boilerplate.workflow/dist/tengo/tpl/main.plj.gz",
-      "model": "@milaboratory/milaboratories.block-boilerplate.model/dist/model.json",
-      "ui": "@milaboratory/milaboratories.block-boilerplate.ui/dist"
+      "workflow": "@pl-open/my-org.block-boilerplate.workflow/dist/tengo/tpl/main.plj.gz",
+      "model": "@pl-open/my-org.block-boilerplate.model/dist/model.json",
+      "ui": "@pl-open/my-org.block-boilerplate.ui/dist"
     },
     "meta": {
       "title": "Block Boilerplate",
       "logo": "file:logos/block-logo.png",
       "url": "https://github.com/milaboratory/block-boilerplate",
       "docs": "https://github.com/milaboratory/block-boilerplate/docs",
-      "support": "mailto:support@milaboratories.com",
+      "support": "mailto:support@my-org.com",
       "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks. Use `pl-service` tool for that.",
       "longDescription": "file:./docs/description.md",
       "changelog": "file:CHANGELOG.md",
       "tags": [],
       "organization": {
-        "name": "MiLaboratories Inc",
-        "url": "https://milaboratories.com/",
+        "name": "My-Org Inc",
+        "url": "https://my-org.com/",
         "logo": "file:logos/organization-logo.png"
       }
     }

@@ -1,10 +1,10 @@
 // import {
 //   BlockArgs,
 //   platforma,
-// } from '@milaboratory/milaboratories.block-boilerplate.model';
-// import { awaitStableState, blockTest } from '@milaboratory/sdk-test';
+// } from '@pl-open/my-org.block-boilerplate.model';
+// import { awaitStableState, blockTest } from '@pl-open/sdk-test';
 // import { blockSpec as myBlockSpec } from 'this-block';
-// import { InferBlockState, wrapOutputs } from '@milaboratory/sdk-ui';
+// import { InferBlockState, wrapOutputs } from '@pl-open/sdk-ui';
 
 // blockTest(
 //   'preset content',

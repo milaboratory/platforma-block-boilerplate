@@ -53,13 +53,13 @@ importers:
 
   .:
     dependencies:
-      '@milaboratory/milaboratories.block-boilerplate.model':
+      '@pl-open/my-org.block-boilerplate.model':
         specifier: workspace:*
         version: link:model
-      '@milaboratory/milaboratories.block-boilerplate.ui':
+      '@pl-open/my-org.block-boilerplate.ui':
         specifier: workspace:*
         version: link:ui
-      '@milaboratory/milaboratories.block-boilerplate.workflow':
+      '@pl-open/my-org.block-boilerplate.workflow':
         specifier: workspace:*
         version: link:workflow
     devDependencies:
@@ -92,7 +92,7 @@ importers:
   test:
     dependencies:
       this-block:
-        specifier: workspace:@milaboratory/milaboratories.block-boilerplate@*
+        specifier: workspace:@pl-open/my-org.block-boilerplate@*
         version: link:..
     devDependencies:
       '@platforma-sdk/test':
@@ -107,7 +107,7 @@ importers:
 
   ui:
     dependencies:
-      '@milaboratory/milaboratories.block-boilerplate.model':
+      '@pl-open/my-org.block-boilerplate.model':
         specifier: workspace:*
         version: link:../model
       '@platforma-sdk/ui-vue':
@@ -4536,13 +4536,13 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
   agent-base@7.1.1:
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -5016,14 +5016,14 @@ snapshots:
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.5:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 

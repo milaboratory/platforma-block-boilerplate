@@ -1,4 +1,4 @@
-import { model } from "@milaboratory/milaboratories.block-boilerplate.model";
+import { model } from "@pl-open/my-org.block-boilerplate.model";
 import { defineApp } from "@platforma-sdk/ui-vue";
 import MainPage from "./pages/MainPage.vue";
 
