@@ -1,12 +1,12 @@
-import { platforma } from '@milaboratory/milaboratories.block-boilerplate.model';
-import { defineApp } from '@milaboratory/sdk-vue';
-import Page from './Page.vue';
+import { model } from "@milaboratory/milaboratories.block-boilerplate.model";
+import { defineApp } from "@platforma-sdk/ui-vue";
+import MainPage from "./pages/MainPage.vue";
 
-export const sdkPlugin = defineApp(platforma, () => {
+export const sdkPlugin = defineApp(model, () => {
   return {
     routes: {
-      '/': Page,
-    }
+      "/": MainPage,
+    },
   };
 });
 

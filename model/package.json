@@ -10,11 +10,10 @@
     "build": "tsup && vite build && block-tools build-model"
   },
   "dependencies": {
-    "@milaboratory/sdk-ui": "catalog:",
-    "zod": "catalog:"
+    "@platforma-sdk/model": "catalog:"
   },
   "devDependencies": {
-    "@milaboratory/pl-block-tools": "catalog:",
+    "@platforma-sdk/block-tools": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",
     "tsup": "catalog:"

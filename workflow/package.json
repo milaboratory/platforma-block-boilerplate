@@ -2,20 +2,13 @@
   "name": "@milaboratory/milaboratories.block-boilerplate.workflow",
   "version": "1.0.0",
   "type": "module",
-  "description": "Tengo-based template",
-  "//": {
-    "build": "node ./scripts/build-static.mjs && pl-tengo check && pl-tengo build"
-  },
+  "description": "Block Workflow",
   "scripts": {
     "build": "rm -rf dist && pl-tengo check && pl-tengo build",
-    "format": "/usr/bin/env emacs --script ./format.el",
-    "test": "vitest"
+    "format": "/usr/bin/env emacs --script ./format.el"
   },
   "devDependencies": {
-    "@milaboratory/tengo-template-builder": "catalog:",
-    "@milaboratory/tengo-sdk": "catalog:",
-    "@milaboratory/sdk-test": "catalog:",
-    "vitest": "catalog:",
-    "typescript": "catalog:"
+    "@milaboratories/tengo-template-builder": "catalog:",
+    "@platforma-sdk/workflow-tengo": "catalog:"
   }
 }

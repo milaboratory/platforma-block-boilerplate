@@ -1,35 +1,17 @@
-import {
-  BlockModel,
-  InferHrefType,
-  type InferOutputsType
-} from '@milaboratory/sdk-ui';
-import {z} from 'zod';
+import { BlockModel, InferOutputsType } from "@platforma-sdk/model";
 
-export const BlockArgs = z.object({
-  argument: z.string(),
-}).strict();
-export type BlockArgs = z.infer<typeof BlockArgs>;
+export type BlockArgs = {
+  name?: string;
+};
 
-export const platforma = BlockModel.create<BlockArgs>('Heavy')
+export const model = BlockModel.create<BlockArgs>("Heavy")
 
-  .initialArgs({
-    argument: 'World',
-  })
+  .initialArgs({})
 
-  .output('transformedArg', (ctx) => ctx.outputs?.resolve({
-    field: 'transformedArg',
-      assertFieldType: 'Input',
-  })?.getDataAsJson<any>())
+  .output("message", (wf) => wf.outputs?.resolve("message")?.getDataAsJson())
 
-  .sections((ctx) => {
-    return [
-      { type: 'link', href: '/', label: 'Main' },
-    ];
-  })
-
-  .inputsValid((ctx) => BlockArgs.safeParse(ctx.args).success)
+  .sections([{ type: "link", href: "/", label: "Main" }])
 
   .done();
 
-export type BlockOutputs = InferOutputsType<typeof platforma>;
-export type Href = InferHrefType<typeof platforma>;
+export type BlockOutputs = InferOutputsType<typeof model>;

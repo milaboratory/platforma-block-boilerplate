@@ -1,10 +1,12 @@
-wf := import("@milaboratory/tengo-sdk:workflow")
+// "hello world"
+wf := import("@platforma-sdk/workflow-tengo:workflow")
 
 wf.body(func(args) {
 	return {
 		outputs: {
-			transformedArg: "Hello " + args.argument + "!"
+			message: "Hello, " + args.name + "!"
 		},
+
 		exports: {}
 	}
 })
