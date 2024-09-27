@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Tengo-based template",
-  "//": {
-    "build": "node ./scripts/build-static.mjs && pl-tengo check && pl-tengo build"
-  },
   "scripts": {
     "build": "rm -rf dist && pl-tengo check && pl-tengo build",
     "format": "/usr/bin/env emacs --script ./format.el",
