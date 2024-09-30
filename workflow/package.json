@@ -5,10 +5,13 @@
   "description": "Block Workflow",
   "scripts": {
     "build": "rm -rf dist && pl-tengo check && pl-tengo build",
+    "test": "vitest",
     "format": "/usr/bin/env emacs --script ./format.el"
   },
   "devDependencies": {
     "@milaboratories/tengo-template-builder": "catalog:",
-    "@platforma-sdk/workflow-tengo": "catalog:"
+    "@platforma-sdk/workflow-tengo": "catalog:",
+    "@platforma-sdk/test": "catalog:",
+    "vitest": "catalog:"
   }
 }
