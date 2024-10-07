@@ -1,5 +1,5 @@
 {
-  "name": "@pl-open/my-org.block-boilerplate",
+  "name": "@platforma-open/my-org.block-boilerplate",
   "version": "1.0.0",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
@@ -10,23 +10,23 @@
     "index.js"
   ],
   "dependencies": {
-    "@pl-open/my-org.block-boilerplate.workflow": "workspace:*",
-    "@pl-open/my-org.block-boilerplate.model": "workspace:*",
-    "@pl-open/my-org.block-boilerplate.ui": "workspace:*"
+    "@platforma-open/my-org.block-boilerplate.workflow": "workspace:*",
+    "@platforma-open/my-org.block-boilerplate.model": "workspace:*",
+    "@platforma-open/my-org.block-boilerplate.ui": "workspace:*"
   },
   "block": {
     "components": {
-      "workflow": "@pl-open/my-org.block-boilerplate.workflow/dist/tengo/tpl/main.plj.gz",
-      "model": "@pl-open/my-org.block-boilerplate.model/dist/model.json",
-      "ui": "@pl-open/my-org.block-boilerplate.ui/dist"
+      "workflow": "@platforma-open/my-org.block-boilerplate.workflow/dist/tengo/tpl/main.plj.gz",
+      "model": "@platforma-open/my-org.block-boilerplate.model/dist/model.json",
+      "ui": "@platforma-open/my-org.block-boilerplate.ui/dist"
     },
     "meta": {
       "title": "Block Boilerplate",
       "logo": "file:logos/block-logo.png",
-      "url": "https://github.com/milaboratory/block-boilerplate",
-      "docs": "https://github.com/milaboratory/block-boilerplate/docs",
+      "url": "https://github.com/my-org/block-boilerplate",
+      "docs": "https://github.com/my-org/block-boilerplate/docs",
       "support": "mailto:support@my-org.com",
-      "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks. Use `pl-service` tool for that.",
+      "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks. Use `@platforma-sdk/bootstrap create-block` tool for that.",
       "longDescription": "file:./docs/description.md",
       "changelog": "file:CHANGELOG.md",
       "tags": [],

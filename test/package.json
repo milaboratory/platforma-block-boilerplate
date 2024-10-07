@@ -1,5 +1,5 @@
 {
-  "name": "@milaboratory/milaboratories.block-boilerplate.test",
+  "name": "@platforma-open/my-org.block-boilerplate.test",
   "private": true,
   "version": "1.0.0",
   "description": "Block tests",
@@ -10,7 +10,7 @@
   "files": [],
   "keywords": [],
   "dependencies": {
-    "this-block": "workspace:@pl-open/my-org.block-boilerplate@*"
+    "this-block": "workspace:@platforma-open/my-org.block-boilerplate@*"
   },
   "devDependencies": {
     "@platforma-sdk/test": "catalog:",

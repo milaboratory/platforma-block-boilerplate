@@ -53,13 +53,13 @@ importers:
 
   .:
     dependencies:
-      '@pl-open/my-org.block-boilerplate.model':
+      '@platforma-open/my-org.block-boilerplate.model':
         specifier: workspace:*
         version: link:model
-      '@pl-open/my-org.block-boilerplate.ui':
+      '@platforma-open/my-org.block-boilerplate.ui':
         specifier: workspace:*
         version: link:ui
-      '@pl-open/my-org.block-boilerplate.workflow':
+      '@platforma-open/my-org.block-boilerplate.workflow':
         specifier: workspace:*
         version: link:workflow
     devDependencies:
@@ -92,7 +92,7 @@ importers:
   test:
     dependencies:
       this-block:
-        specifier: workspace:@pl-open/my-org.block-boilerplate@*
+        specifier: workspace:@platforma-open/my-org.block-boilerplate@*
         version: link:..
     devDependencies:
       '@platforma-sdk/test':
@@ -107,7 +107,7 @@ importers:
 
   ui:
     dependencies:
-      '@pl-open/my-org.block-boilerplate.model':
+      '@platforma-open/my-org.block-boilerplate.model':
         specifier: workspace:*
         version: link:../model
       '@platforma-sdk/ui-vue':

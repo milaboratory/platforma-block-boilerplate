@@ -1,7 +1,4 @@
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 import { PlAlert, PlBlockPage, PlTextField } from '@platforma-sdk/ui-vue';
 import { useApp } from '../app';
 

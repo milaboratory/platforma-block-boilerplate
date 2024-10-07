@@ -1,4 +1,5 @@
 # Overview
 
-This block allows to create samples and link samples with meta information.
+Simple Hello World block that can be used as a boilerplate for newly created blocks. Use `@platforma-sdk/bootstrap` tool for that.
+
 
