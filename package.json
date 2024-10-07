@@ -21,19 +21,19 @@
       "ui": "@platforma-open/my-org.block-boilerplate.ui/dist"
     },
     "meta": {
-      "title": "Block Boilerplate",
+      "title": "Block Title",
       "logo": "file:logos/block-logo.png",
-      "url": "https://github.com/my-org/block-boilerplate",
-      "docs": "https://github.com/my-org/block-boilerplate/docs",
-      "support": "mailto:support@my-org.com",
-      "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks. Use `@platforma-sdk/bootstrap create-block` tool for that.",
+      "url": "https://github.com/milaboratory/platforma-block-boilerplate",
+      "docs": "https://github.com/milaboratory/platforma-block-boilerplate/docs",
+      "support": "mailto:support@milaboratories.com",
+      "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks.",
       "longDescription": "file:./docs/description.md",
       "changelog": "file:CHANGELOG.md",
-      "tags": [],
+      "tags": ["tutorial"],
       "organization": {
-        "name": "My-Org Inc",
-        "url": "https://my-org.com/",
-        "logo": "file:logos/organization-logo.png"
+        "name": "MiLaboratories Inc",
+        "url": "https://milaboratories.com/",
+        "logo": "file:logos/milaboratories.png"
       }
     }
   },
