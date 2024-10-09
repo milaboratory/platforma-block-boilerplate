@@ -1,16 +1,16 @@
-import { BlockModel, InferOutputsType } from "@platforma-sdk/model";
+import { BlockModel, InferOutputsType } from '@platforma-sdk/model';
 
 export type BlockArgs = {
   name?: string;
 };
 
-export const model = BlockModel.create<BlockArgs>("Heavy")
+export const model = BlockModel.create<BlockArgs>()
 
   .initialArgs({})
 
-  .output("message", (wf) => wf.outputs?.resolve("message")?.getDataAsJson())
+  .output('message', (ctx) => ctx.outputs?.resolve('message')?.getDataAsJson())
 
-  .sections([{ type: "link", href: "/", label: "Main" }])
+  .sections([{ type: 'link', href: '/', label: 'Main' }])
 
   .done();
 
