@@ -5,7 +5,7 @@ import MainPage from "./pages/MainPage.vue";
 export const sdkPlugin = defineApp(model, () => {
   return {
     routes: {
-      "/": MainPage,
+      "/": () => MainPage,
     },
   };
 });

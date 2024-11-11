@@ -11,11 +11,9 @@ const app = useApp();
   
     <PlTextField v-model="app.model.args.name" label="Enter your name" clearable />
 
-    <PlAlert type="success" v-if="app.model.outputs.message">
+    <PlAlert type="success" v-if="app.model.outputs.tengoMessage"> {{ app.model.outputs.tengoMessage }} </PlAlert>
 
-      {{ app.model.outputs.message }}
-
-    </PlAlert>
+    <PlAlert type="success" v-if="app.model.outputs.pythonMessage"> {{ app.model.outputs.pythonMessage }} </PlAlert>
 
   </PlBlockPage>
 </template>
