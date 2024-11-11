@@ -19,20 +19,20 @@ catalogs:
       specifier: ^1.7.20
       version: 1.8.0
     '@platforma-sdk/package-builder':
-      specifier: ^2.11.1
-      version: 2.11.1
+      specifier: ^2.10.7
+      version: 2.11.0
     '@platforma-sdk/tengo-builder':
       specifier: ^1.16.1
       version: 1.16.1
     '@platforma-sdk/test':
-      specifier: ^1.8.5
-      version: 1.8.5
+      specifier: ^1.7.43
+      version: 1.8.3
     '@platforma-sdk/ui-vue':
       specifier: ^1.7.46
       version: 1.8.2
     '@platforma-sdk/workflow-tengo':
-      specifier: ^1.8.1
-      version: 1.8.1
+      specifier: ^1.7.3
+      version: 1.7.6
     '@vitejs/plugin-vue':
       specifier: ^5.1.4
       version: 5.1.5
@@ -55,7 +55,7 @@ catalogs:
       specifier: ^3.5.12
       version: 3.5.12
     vue-tsc:
-      specifier: ^2.1.6
+      specifier: ^2.1.10
       version: 2.1.10
 
 importers:
@@ -96,7 +96,7 @@ importers:
         version: 2.3.23
       tsup:
         specifier: 'catalog:'
-        version: 8.3.5(postcss@8.4.49)(typescript@5.6.3)(yaml@2.6.0)
+        version: 8.3.5(postcss@8.4.48)(typescript@5.6.3)(yaml@2.6.0)
       typescript:
         specifier: 'catalog:'
         version: 5.6.3
@@ -111,7 +111,7 @@ importers:
         version: 1.0.0
       '@platforma-sdk/package-builder':
         specifier: 'catalog:'
-        version: 2.11.1
+        version: 2.11.0
 
   test:
     dependencies:
@@ -121,7 +121,7 @@ importers:
     devDependencies:
       '@platforma-sdk/test':
         specifier: 'catalog:'
-        version: 1.8.5(@types/node@22.9.0)
+        version: 1.8.3(@types/node@22.9.0)
       typescript:
         specifier: 'catalog:'
         version: 5.6.3
@@ -158,20 +158,19 @@ importers:
         version: 2.1.10(typescript@5.6.3)
 
   workflow:
-    dependencies:
-      '@platforma-open/my-org.block-boilerplate.software':
-        specifier: workspace:*
-        version: link:../software
     devDependencies:
+      '@platforma-open/my-org.block-boilerplate.software':
+        specifier: 'workspace:'
+        version: link:../software
       '@platforma-sdk/tengo-builder':
         specifier: 'catalog:'
         version: 1.16.1
       '@platforma-sdk/test':
         specifier: 'catalog:'
-        version: 1.8.5(@types/node@22.9.0)
+        version: 1.8.3(@types/node@22.9.0)
       '@platforma-sdk/workflow-tengo':
         specifier: 'catalog:'
-        version: 1.8.1
+        version: 1.7.6
       vitest:
         specifier: 'catalog:'
         version: 2.1.4(@types/node@22.9.0)
@@ -252,8 +251,8 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-s3@3.689.0':
-    resolution: {integrity: sha512-qYD1GJEPeLM6H3x8BuAAMXZltvVce5vGiwtZc9uMkBBo3HyFnmPitIPTPfaD1q8LOn/7KFdkY4MJ4e8D3YpV9g==}
+  '@aws-sdk/client-s3@3.688.0':
+    resolution: {integrity: sha512-bLyF7gT0RTWrsJPxbaslg1xP1gUdw3BJVvgfWM/63BDBpVCqIk9YlrXfJwjImcKguxGp8sCTdttywmfdPwQEfg==}
     engines: {node: '>=16.0.0'}
 
   '@aws-sdk/client-sso-oidc@3.687.0':
@@ -306,12 +305,6 @@ packages:
     peerDependencies:
       '@aws-sdk/client-sts': ^3.686.0
 
-  '@aws-sdk/lib-storage@3.689.0':
-    resolution: {integrity: sha512-5onxtoSunbrTIt5bttlEAF92A7OJfYDL1+qTEMxdyvLXzOENp3WElXVpKKPeqowuOffABT9ZcoTo/0aHOdZ81w==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      '@aws-sdk/client-s3': ^3.689.0
-
   '@aws-sdk/middleware-bucket-endpoint@3.686.0':
     resolution: {integrity: sha512-6qCoWI73/HDzQE745MHQUYz46cAQxHCgy1You8MZQX9vHAQwqBnkcsb2hGp7S6fnQY5bNsiZkMWVQ/LVd2MNjg==}
     engines: {node: '>=16.0.0'}
@@ -320,8 +313,8 @@ packages:
     resolution: {integrity: sha512-5yYqIbyhLhH29vn4sHiTj7sU6GttvLMk3XwCmBXjo2k2j3zHqFUwh9RyFGF9VY6Z392Drf/E/cl+qOGypwULpg==}
     engines: {node: '>=16.0.0'}
 
-  '@aws-sdk/middleware-flexible-checksums@3.689.0':
-    resolution: {integrity: sha512-6VxMOf3mgmAgg6SMagwKj5pAe+putcx2F2odOAWviLcobFpdM/xK9vNry7p6kY+RDNmSlBvcji9wnU59fjV74Q==}
+  '@aws-sdk/middleware-flexible-checksums@3.688.0':
+    resolution: {integrity: sha512-diIBWLpM5eg3sRggKSKGUJGBh8VyFo/wZLq80GSq1kxGlmJOMvwT6YvE+Z51xhEbYTKIjX9IH/NhO7W4pA3MNw==}
     engines: {node: '>=16.0.0'}
 
   '@aws-sdk/middleware-host-header@3.686.0':
@@ -908,8 +901,8 @@ packages:
   '@milaboratories/pl-local@1.5.2':
     resolution: {integrity: sha512-AKz4CnMbMRtMDJtRvdyQLIENbltVOdB2AcFh8PVVAT+rkDPMszIChwdq+0JvtVkTbTbIIQG0s/E58eaNFKpo6Q==}
 
-  '@milaboratories/pl-middle-layer@1.14.23':
-    resolution: {integrity: sha512-1JHOrhbHi9TcfKf3Bea4b9hQgytX6Um6ZPztyXoVi5G4HxGw5bwQxWFLVbPpmTLyjzMmpC7XWVDHX6R5c5BlnA==}
+  '@milaboratories/pl-middle-layer@1.14.21':
+    resolution: {integrity: sha512-W5ZeZZaXaW4qb82vk9HZjzWf/jLxG2nQpp3uuo6WYSOvZhYCxGFNPLOdfkpUWDUEoArPitwJxMHjLnZcLr9GUg==}
 
   '@milaboratories/pl-model-common@1.6.1':
     resolution: {integrity: sha512-i+0a7Pj1oh4iOK5g0mBoIwh4RgX4iC5Wd6i+afppXexc0CeDaoY5Q+I4Wt5pU0NvuE2IaVnk9cSH1zmoPZG3bQ==}
@@ -973,22 +966,22 @@ packages:
   '@platforma-sdk/model@1.8.0':
     resolution: {integrity: sha512-Vg9ZQGp1yD3pjRty+VzSR3jCKW1GfgedOEGGP5C9MRSllFesshZvRUz5aX7ojhIcTjNGRL3okryGcgXRTyOQUQ==}
 
-  '@platforma-sdk/package-builder@2.11.1':
-    resolution: {integrity: sha512-1wzRlb9R00gjBdT/E/RLDea3IorTlucsod1wzKKep8AVFhJosiXGVDuFVN6eZv/FFKTFCOuRlj7vMZRZuhaQLw==}
+  '@platforma-sdk/package-builder@2.11.0':
+    resolution: {integrity: sha512-SEk5yKm9qv+avY/FwwKYwrleuckHrvOZDdm28UhOT+xk2A7pvGyUnc/O5IBb8xr6oFJFbhVUci6nwAL/bdhm5w==}
     hasBin: true
 
   '@platforma-sdk/tengo-builder@1.16.1':
     resolution: {integrity: sha512-jYksvztjVhBsL2MKQ1T2bkLtSUy0eABscoKpM0YH6LR6fgAyZ4K0fSL+jVnTXLfnU+M0nPoFQxRdicqWU8kofw==}
     hasBin: true
 
-  '@platforma-sdk/test@1.8.5':
-    resolution: {integrity: sha512-v2Lg+K17gWYgOUZ6/3Ivh883l6g7eR/NlVizuD4kylMRKE3omt2GRNNcqG0V+jijjFY1+R25u393w9so8/VvIA==}
+  '@platforma-sdk/test@1.8.3':
+    resolution: {integrity: sha512-EOFPLf6V+OfjS0EX4rkYn7Gk4xSctGArHkQ+rpmcCuQnwwyW/yY5wbleEzM6qhJXPg2dSRRmxLGQJXV9r66+JA==}
 
   '@platforma-sdk/ui-vue@1.8.2':
     resolution: {integrity: sha512-Em/60qM2MpY3nWfZ690Js9GVFmRhnMpEt78C/fV2skkPViyZtFmzuO+dOuddYNFr4+W9i1jRJVO9VS8sM5ineg==}
 
-  '@platforma-sdk/workflow-tengo@1.8.1':
-    resolution: {integrity: sha512-Nbf/ybdn6Rif5RbK4X5R8yOqiPp5u9ACxLZc2SbKrHoZjwQJqJwt+8Nudt9e6tOBjn5tbL21Q5XeRkZmEatIQw==}
+  '@platforma-sdk/workflow-tengo@1.7.6':
+    resolution: {integrity: sha512-yry6fLubM18ZoS4iI9xf26gu+z/AAj0IW1LLFWOISIC7qDM7xGXo7z+TMZ9dYcc05KgBtyXhPY1dTjzOfsy4rA==}
 
   '@protobuf-ts/grpc-transport@2.9.4':
     resolution: {integrity: sha512-CgjTR3utmkMkkThpfgtOz9tNR9ZARbNoQYL7TCKqFU2sgAX0LgzAkwOx+sfgtUsZn9J08+yvn307nNJdYocLRA==}
@@ -2995,9 +2988,6 @@ packages:
   buffer-fill@1.0.0:
     resolution: {integrity: sha512-T7zexNBwiiaCOGDg9xNX9PBmjrubblRkENuptryuI64URkXDFum9il/JGL8Lm8wYfAXpredVXXZz7eMHilimiQ==}
 
-  buffer@5.6.0:
-    resolution: {integrity: sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==}
-
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
@@ -3322,10 +3312,6 @@ packages:
 
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
-
-  events@3.3.0:
-    resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
-    engines: {node: '>=0.8.x'}
 
   expect-type@1.1.0:
     resolution: {integrity: sha512-bFi65yM+xZgk+u/KRIpekdSYkTB5W1pEf0Lt8Q8Msh7b+eQ7LXVtIB1Bkm4fvclDEL1b2CZkMhv2mOeF8tMdkA==}
@@ -3882,8 +3868,8 @@ packages:
       yaml:
         optional: true
 
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
+  postcss@8.4.48:
+    resolution: {integrity: sha512-GCRK8F6+Dl7xYniR5a4FYbpBzU8XnZVeowqsQFYdcXuSbChgiks7qybSkbvnaeqv0G0B+dd9/jJgH8kkLDQeEA==}
     engines: {node: ^10 || ^12 || >=14}
 
   prettier@2.8.8:
@@ -4068,9 +4054,6 @@ packages:
 
   std-env@3.8.0:
     resolution: {integrity: sha512-Bc3YwwCB+OzldMxOXJIIvC6cPRWr/LxOp48CdQTOkPyk/t4JWWJbrilwBd7RJzKV8QW7tJkcgAmeuLLJugl5/w==}
-
-  stream-browserify@3.0.0:
-    resolution: {integrity: sha512-H73RAHsVBapbim0tU2JwwOiXUj+fikfiaoYAKHF3VJfA0pe2BCzkhAHBlLG6REzE+2WNZcxOXjK7lkso+9euLA==}
 
   streamx@2.20.1:
     resolution: {integrity: sha512-uTa0mU6WUC65iUvzKH4X9hEdvSW7rbPxPtwfWiLMSj3qTdQbAiUboZTxauKfpFuGIGa1C2BYijZ7wgdUXICJhA==}
@@ -4614,7 +4597,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-s3@3.689.0':
+  '@aws-sdk/client-s3@3.688.0':
     dependencies:
       '@aws-crypto/sha1-browser': 5.2.0
       '@aws-crypto/sha256-browser': 5.2.0
@@ -4625,7 +4608,7 @@ snapshots:
       '@aws-sdk/credential-provider-node': 3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0)
       '@aws-sdk/middleware-bucket-endpoint': 3.686.0
       '@aws-sdk/middleware-expect-continue': 3.686.0
-      '@aws-sdk/middleware-flexible-checksums': 3.689.0
+      '@aws-sdk/middleware-flexible-checksums': 3.688.0
       '@aws-sdk/middleware-host-header': 3.686.0
       '@aws-sdk/middleware-location-constraint': 3.686.0
       '@aws-sdk/middleware-logger': 3.686.0
@@ -4915,17 +4898,6 @@ snapshots:
       '@smithy/types': 3.6.0
       tslib: 2.8.1
 
-  '@aws-sdk/lib-storage@3.689.0(@aws-sdk/client-s3@3.689.0)':
-    dependencies:
-      '@aws-sdk/client-s3': 3.689.0
-      '@smithy/abort-controller': 3.1.6
-      '@smithy/middleware-endpoint': 3.2.1
-      '@smithy/smithy-client': 3.4.2
-      buffer: 5.6.0
-      events: 3.3.0
-      stream-browserify: 3.0.0
-      tslib: 2.8.1
-
   '@aws-sdk/middleware-bucket-endpoint@3.686.0':
     dependencies:
       '@aws-sdk/types': 3.686.0
@@ -4943,7 +4915,7 @@ snapshots:
       '@smithy/types': 3.6.0
       tslib: 2.8.1
 
-  '@aws-sdk/middleware-flexible-checksums@3.689.0':
+  '@aws-sdk/middleware-flexible-checksums@3.688.0':
     dependencies:
       '@aws-crypto/crc32': 5.2.0
       '@aws-crypto/crc32c': 5.2.0
@@ -5675,7 +5647,7 @@ snapshots:
       yaml: 2.6.0
       zod: 3.23.8
 
-  '@milaboratories/pl-middle-layer@1.14.23':
+  '@milaboratories/pl-middle-layer@1.14.21':
     dependencies:
       '@milaboratories/computable': 2.2.1
       '@milaboratories/pframes-node': 1.6.8(@milaboratories/pl-model-common@1.6.1)
@@ -5690,7 +5662,7 @@ snapshots:
       '@milaboratories/ts-helpers': 1.1.1
       '@platforma-sdk/block-tools': 2.3.23
       '@platforma-sdk/model': 1.8.0
-      '@platforma-sdk/workflow-tengo': 1.8.1
+      '@platforma-sdk/workflow-tengo': 1.7.6
       canonicalize: 2.0.0
       denque: 2.1.0
       lru-cache: 11.0.2
@@ -5788,7 +5760,7 @@ snapshots:
 
   '@platforma-sdk/block-tools@2.3.23':
     dependencies:
-      '@aws-sdk/client-s3': 3.689.0
+      '@aws-sdk/client-s3': 3.688.0
       '@milaboratories/pl-model-middle-layer': 1.5.7
       '@milaboratories/resolve-helper': 1.0.1
       '@milaboratories/ts-helpers': 1.1.1
@@ -5810,10 +5782,9 @@ snapshots:
       utility-types: 3.11.0
       zod: 3.23.8
 
-  '@platforma-sdk/package-builder@2.11.1':
+  '@platforma-sdk/package-builder@2.11.0':
     dependencies:
-      '@aws-sdk/client-s3': 3.689.0
-      '@aws-sdk/lib-storage': 3.689.0(@aws-sdk/client-s3@3.689.0)
+      '@aws-sdk/client-s3': 3.688.0
       '@oclif/core': 4.0.31
       canonicalize: 2.0.0
       tar: 7.4.3
@@ -5830,11 +5801,11 @@ snapshots:
       canonicalize: 2.0.0
       winston: 3.17.0
 
-  '@platforma-sdk/test@1.8.5(@types/node@22.9.0)':
+  '@platforma-sdk/test@1.8.3(@types/node@22.9.0)':
     dependencies:
       '@milaboratories/computable': 2.2.1
       '@milaboratories/pl-client': 2.5.9
-      '@milaboratories/pl-middle-layer': 1.14.23
+      '@milaboratories/pl-middle-layer': 1.14.21
       '@milaboratories/pl-tree': 1.4.10
       '@milaboratories/ts-helpers': 1.1.1
       '@platforma-sdk/model': 1.8.0
@@ -5882,7 +5853,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@platforma-sdk/workflow-tengo@1.8.1':
+  '@platforma-sdk/workflow-tengo@1.7.6':
     dependencies:
       '@milaboratories/software-pframes-conv': 1.6.8
       '@platforma-open/milaboratories.software-small-binaries': 1.14.5
@@ -8494,7 +8465,7 @@ snapshots:
       '@vue/shared': 3.5.12
       estree-walker: 2.0.2
       magic-string: 0.30.12
-      postcss: 8.4.49
+      postcss: 8.4.48
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.12':
@@ -8673,11 +8644,6 @@ snapshots:
   buffer-crc32@0.2.13: {}
 
   buffer-fill@1.0.0: {}
-
-  buffer@5.6.0:
-    dependencies:
-      base64-js: 1.5.1
-      ieee754: 1.2.1
 
   buffer@5.7.1:
     dependencies:
@@ -9017,8 +8983,6 @@ snapshots:
   estree-walker@3.0.3:
     dependencies:
       '@types/estree': 1.0.6
-
-  events@3.3.0: {}
 
   expect-type@1.1.0: {}
 
@@ -9485,14 +9449,14 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  postcss-load-config@6.0.1(postcss@8.4.49)(yaml@2.6.0):
+  postcss-load-config@6.0.1(postcss@8.4.48)(yaml@2.6.0):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
-      postcss: 8.4.49
+      postcss: 8.4.48
       yaml: 2.6.0
 
-  postcss@8.4.49:
+  postcss@8.4.48:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.1.1
@@ -9692,11 +9656,6 @@ snapshots:
 
   std-env@3.8.0: {}
 
-  stream-browserify@3.0.0:
-    dependencies:
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-
   streamx@2.20.1:
     dependencies:
       fast-fifo: 1.3.2
@@ -9858,7 +9817,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.3.5(postcss@8.4.49)(typescript@5.6.3)(yaml@2.6.0):
+  tsup@8.3.5(postcss@8.4.48)(typescript@5.6.3)(yaml@2.6.0):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -9868,7 +9827,7 @@ snapshots:
       esbuild: 0.24.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(postcss@8.4.49)(yaml@2.6.0)
+      postcss-load-config: 6.0.1(postcss@8.4.48)(yaml@2.6.0)
       resolve-from: 5.0.0
       rollup: 4.25.0
       source-map: 0.8.0-beta.0
@@ -9877,7 +9836,7 @@ snapshots:
       tinyglobby: 0.2.10
       tree-kill: 1.2.2
     optionalDependencies:
-      postcss: 8.4.49
+      postcss: 8.4.48
       typescript: 5.6.3
     transitivePeerDependencies:
       - jiti
@@ -9955,7 +9914,7 @@ snapshots:
   vite@5.4.11(@types/node@22.9.0):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.49
+      postcss: 8.4.48
       rollup: 4.25.0
     optionalDependencies:
       '@types/node': 22.9.0
