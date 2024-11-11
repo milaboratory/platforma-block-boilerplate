@@ -12,6 +12,7 @@ catalog:
   "@platforma-sdk/block-tools": ^2.3.12
   "@platforma-sdk/test": ^1.5.43
   "@platforma-sdk/tengo-builder": ^1.14.13
+  "@milaboratories/graph-maker": ^1.0.19
 
   
   "vue": ^3.4.34
