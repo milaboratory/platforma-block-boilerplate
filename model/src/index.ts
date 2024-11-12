@@ -10,7 +10,7 @@ export const model = BlockModel.create<BlockArgs>()
 
   .output('tengoMessage', (ctx) => ctx.outputs?.resolve('tengoMessage')?.getDataAsJson())
 
-  .output('pythonMessage', (ctx) => ctx.outputs?.resolve('pythonMessage')?.getDataAsJson())
+  .output('pythonMessage', (ctx) => ctx.outputs?.resolve('pythonMessage')?.getDataAsString())
 
   .sections([{ type: 'link', href: '/', label: 'Main' }])
 
