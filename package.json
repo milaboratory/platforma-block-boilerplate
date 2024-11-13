@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
-    "build": "rm -rf ./block-pack && block-tools pack"
+    "build-block": "turbo run build && rm -rf block-pack/* && block-tools pack",
+    "build-block-dev": "turbo run build:dev && rm -rf block-pack && block-tools pack",
+    "build-block-force": "turbo run build --force && rm -rf block-pack/* && block-tools pack",
+    "test-block": "turbo run test --concurrency 1",
+    "watch": "turbo watch build"
   },
   "files": [
     "index.d.ts",
@@ -38,7 +42,9 @@
     }
   },
   "devDependencies": {
-    "@changesets/cli": "catalog:",
-    "@platforma-sdk/block-tools": "catalog:"
-  }
+    "turbo": "catalog:",
+    "@platforma-sdk/block-tools": "catalog:",
+    "@changesets/cli": "catalog:"
+  },
+  "packageManager": "pnpm@9.12.0"
 }

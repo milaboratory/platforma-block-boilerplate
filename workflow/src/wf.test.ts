@@ -7,7 +7,10 @@ tplTest(
       name: 'World'
     });
 
-    const message = results.output("message", (a) => a?.getDataAsJson<string>());
-    expect(await message.awaitStableValue()).eq('Hello, World!');
+    const pythonMessage = results.output("pythonMessage", (a) => a?.getDataAsString());
+    expect(await pythonMessage.awaitStableValue()).eq('Hello from Python, World!\n');
+
+    const tengoMessage = results.output("tengoMessage", (a) => a?.getDataAsJson<string>());
+    expect(await tengoMessage.awaitStableValue()).eq('Hello from Tengo, World!');
   }
 );

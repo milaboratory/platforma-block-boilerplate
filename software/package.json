@@ -1,0 +1,40 @@
+{
+  "name": "@platforma-open/my-org.block-boilerplate.software",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Block Software",
+  "scripts": {
+    "build": "pl-pkg build",
+    "build:dev": "pl-pkg build --dev=local",
+    "test": "true",
+
+    "prepublishOnly": ""
+  },
+  "block-software": {
+    "artifacts": {
+      "hello-python-artifact": {
+        "type": "python",
+        "registry": "platforma-open",
+        "version": "1.0.0",
+        "environment": "@platforma-open/milaboratories.runenv-python-3:3.12.6",
+        "dependencies": {
+          "toolset": "pip",
+          "requirements": "requirements.txt"
+        },
+        "root": "./src_python"
+      }
+    },
+    "entrypoints": {
+      "hello-world-python": {
+        "binary": {
+          "artifact": "hello-python-artifact",
+          "cmd": [ "python", "{pkg}/hello.py" ]
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@platforma-open/milaboratories.runenv-python-3": "^1.0.0",
+    "@platforma-sdk/package-builder": "catalog:"
+  }
+}
