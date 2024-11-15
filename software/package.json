@@ -34,7 +34,7 @@
     }
   },
   "devDependencies": {
-    "@platforma-open/milaboratories.runenv-python-3": "^1.0.0",
+    "@platforma-open/milaboratories.runenv-python-3": "catalog:",
     "@platforma-sdk/package-builder": "catalog:"
   }
 }

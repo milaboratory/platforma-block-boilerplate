@@ -16,7 +16,7 @@ catalog:
   "@platforma-sdk/package-builder": ^2.11.1
   "@milaboratories/graph-maker": ^1.0.19
 
-  "@platforma-open/milaboratories.runenv-python-3": ^3.12.6
+  "@platforma-open/milaboratories.runenv-python-3": ^1.0.0
   
   "vue": ^3.5.12
   "vue-tsc": ^2.1.6

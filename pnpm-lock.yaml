@@ -12,6 +12,9 @@ catalogs:
     '@milaboratories/graph-maker':
       specifier: ^1.0.19
       version: 1.0.21
+    '@platforma-open/milaboratories.runenv-python-3':
+      specifier: ^1.0.0
+      version: 1.0.0
     '@platforma-sdk/block-tools':
       specifier: ^2.3.21
       version: 2.3.23
@@ -107,7 +110,7 @@ importers:
   software:
     devDependencies:
       '@platforma-open/milaboratories.runenv-python-3':
-        specifier: ^1.0.0
+        specifier: 'catalog:'
         version: 1.0.0
       '@platforma-sdk/package-builder':
         specifier: 'catalog:'
