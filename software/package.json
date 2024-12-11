@@ -7,7 +7,7 @@
     "build": "pl-pkg build",
     "test": "true",
 
-    "prepublishOnly": ""
+    "prepublishOnly": "pl-pkg publish packages"
   },
   "block-software": {
     "artifacts": {
