@@ -5,10 +5,9 @@
   "description": "Block Software",
   "scripts": {
     "build": "pl-pkg build",
-    "build:dev": "pl-pkg build --dev=local",
     "test": "true",
 
-    "prepublishOnly": ""
+    "prepublishOnly": "pl-pkg publish packages"
   },
   "block-software": {
     "artifacts": {

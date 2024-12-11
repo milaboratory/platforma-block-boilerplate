@@ -1,10 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["tsconfig.json"],
-  "extends": ["//"],
   "tasks": {
     "build": {
       "inputs": ["$TURBO_DEFAULT$"],
+      "env": ["PL_PKG_DEV"],
       "outputs": ["./dist/**"],
       "dependsOn": ["^build"]
     },

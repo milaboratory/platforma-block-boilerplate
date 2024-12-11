@@ -4,7 +4,7 @@ packages:
   - ui
   - test
   - software
-  - .
+  - block
 
 catalog:
   "@platforma-sdk/model": ^1.7.20

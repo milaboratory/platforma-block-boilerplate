@@ -3,47 +3,16 @@
   "version": "1.0.0",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
-    "build-block": "turbo run build && rm -rf block-pack/* && block-tools pack",
-    "build-block-dev": "turbo run build:dev && rm -rf block-pack && block-tools pack",
-    "build-block-force": "turbo run build --force && rm -rf block-pack/* && block-tools pack",
-    "test-block": "turbo run test --concurrency 1",
+    "build": "turbo run build",
+    "test": "turbo run test --concurrency 1",
     "watch": "turbo watch build"
   },
   "files": [
     "index.d.ts",
     "index.js"
   ],
-  "dependencies": {
-    "@platforma-open/my-org.block-boilerplate.workflow": "workspace:*",
-    "@platforma-open/my-org.block-boilerplate.model": "workspace:*",
-    "@platforma-open/my-org.block-boilerplate.ui": "workspace:*"
-  },
-  "block": {
-    "components": {
-      "workflow": "@platforma-open/my-org.block-boilerplate.workflow/dist/tengo/tpl/main.plj.gz",
-      "model": "@platforma-open/my-org.block-boilerplate.model/dist/model.json",
-      "ui": "@platforma-open/my-org.block-boilerplate.ui/dist"
-    },
-    "meta": {
-      "title": "Block Title",
-      "logo": "file:logos/block-logo.png",
-      "url": "https://github.com/milaboratory/platforma-block-boilerplate",
-      "docs": "https://github.com/milaboratory/platforma-block-boilerplate/docs",
-      "support": "mailto:support@milaboratories.com",
-      "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks.",
-      "longDescription": "file:./docs/description.md",
-      "changelog": "file:CHANGELOG.md",
-      "tags": ["tutorial"],
-      "organization": {
-        "name": "MiLaboratories Inc",
-        "url": "https://milaboratories.com/",
-        "logo": "file:logos/milaboratories.png"
-      }
-    }
-  },
   "devDependencies": {
     "turbo": "catalog:",
-    "@platforma-sdk/block-tools": "catalog:",
     "@changesets/cli": "catalog:"
   },
   "packageManager": "pnpm@9.12.0"
