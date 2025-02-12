@@ -9,15 +9,15 @@ packages:
 catalog:
   "@platforma-sdk/model": ^1.22.18
   "@platforma-sdk/ui-vue": ^1.22.30
-  "@platforma-sdk/workflow-tengo": ^1.8.1
-  "@platforma-sdk/block-tools": ^2.3.21
-  "@platforma-sdk/test": ^1.8.5
-  "@platforma-sdk/tengo-builder": ^1.16.1
-  "@platforma-sdk/package-builder": ^2.11.1
+  "@platforma-sdk/workflow-tengo": ^2.9.10
+  "@platforma-sdk/block-tools": ^2.5.9
+  "@platforma-sdk/test": ^1.22.30
+  "@platforma-sdk/tengo-builder": ^1.17.5
+  "@platforma-sdk/package-builder": ^2.15.0
   "@platforma-sdk/eslint-config": ^1.0.1
 
 
-  "@platforma-open/milaboratories.runenv-python-3": ^1.0.0
+  "@platforma-open/milaboratories.runenv-python-3": ^1.1.5
   
   "vue": ^3.5.12
   "vue-tsc": ^2.1.6
@@ -27,7 +27,7 @@ catalog:
   "turbo": ^2.2.3
 
   "vite": ^5.4.11
-  "vitest": ^2.1.4
+  "vitest": ^2.1.8
   "@vitejs/plugin-vue": ^5.1.4
 
   "@changesets/cli": ^2.27.9
