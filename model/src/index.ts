@@ -1,4 +1,5 @@
-import { BlockModel, InferOutputsType } from '@platforma-sdk/model';
+import type { InferOutputsType } from '@platforma-sdk/model';
+import { BlockModel } from '@platforma-sdk/model';
 
 export type BlockArgs = {
   name?: string;
