@@ -3,17 +3,14 @@ import { PlAlert, PlBlockPage, PlTextField } from '@platforma-sdk/ui-vue';
 import { useApp } from '../app';
 
 const app = useApp();
-
 </script>
 
 <template>
   <PlBlockPage>
-  
-    <PlTextField v-model="app.model.args.name" label="Enter your name" clearable />
+    <PlTextField v-model="app.model.args.name" label="Enter your name" :clearable="() => undefined" />
 
-    <PlAlert type="success" v-if="app.model.outputs.tengoMessage"> {{ app.model.outputs.tengoMessage }} </PlAlert>
+    <PlAlert v-if="app.model.outputs.tengoMessage" type="success"> {{ app.model.outputs.tengoMessage }} </PlAlert>
 
-    <PlAlert type="success" v-if="app.model.outputs.pythonMessage"> {{ app.model.outputs.pythonMessage }} </PlAlert>
-
+    <PlAlert v-if="app.model.outputs.pythonMessage" type="success"> {{ app.model.outputs.pythonMessage }} </PlAlert>
   </PlBlockPage>
 </template>
