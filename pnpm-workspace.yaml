@@ -7,27 +7,27 @@ packages:
   - block
 
 catalog:
-  "@platforma-sdk/model": ^1.22.18
-  "@platforma-sdk/ui-vue": ^1.22.30
-  "@platforma-sdk/workflow-tengo": ^2.9.10
-  "@platforma-sdk/block-tools": ^2.5.9
-  "@platforma-sdk/test": ^1.22.30
-  "@platforma-sdk/tengo-builder": ^1.17.5
-  "@platforma-sdk/package-builder": ^2.15.0
-  "@platforma-sdk/eslint-config": ^1.0.1
+  "@platforma-sdk/model": ^1.24.5
+  "@platforma-sdk/ui-vue": ^1.24.5
+  "@platforma-sdk/workflow-tengo": ^3.0.2
+  "@platforma-sdk/block-tools": ^2.5.24
+  "@platforma-sdk/test": ^1.24.7
+  "@platforma-sdk/tengo-builder": ^2.0.1
+  "@platforma-sdk/package-builder": ^2.15.6
+  "@platforma-sdk/eslint-config": ^1.0.2
 
 
-  "@platforma-open/milaboratories.runenv-python-3": ^1.1.5
+  "@platforma-open/milaboratories.runenv-python-3": ^1.1.7
   
-  "vue": ^3.5.12
-  "vue-tsc": ^2.1.6
+  "vue": ^3.5.13
+  "vue-tsc": ^2.2.8
   
   "typescript": ~5.5.4
   "tsup": ~8.3.5
-  "turbo": ^2.2.3
+  "turbo": ^2.4.4
 
-  "vite": ^5.4.11
+  "vite": ^6.2.2
   "vitest": ^2.1.8
-  "@vitejs/plugin-vue": ^5.1.4
+  "@vitejs/plugin-vue": ^5.2.1
 
-  "@changesets/cli": ^2.27.9
+  "@changesets/cli": ^2.28.1

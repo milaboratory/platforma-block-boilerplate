@@ -5,15 +5,15 @@ export type BlockArgs = {
   name?: string;
 };
 
-export const model = BlockModel.create<BlockArgs>()
+export const model = BlockModel.create()
 
-  .initialArgs({})
+  .withArgs<BlockArgs>({})
 
   .output('tengoMessage', (ctx) => ctx.outputs?.resolve('tengoMessage')?.getDataAsJson())
 
   .output('pythonMessage', (ctx) => ctx.outputs?.resolve('pythonMessage')?.getDataAsString())
 
-  .sections([{ type: 'link', href: '/', label: 'Main' }])
+  .sections((_ctx) => [{ type: 'link', href: '/', label: 'Main' }])
 
   .done();
 
