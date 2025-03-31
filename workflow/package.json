@@ -9,12 +9,11 @@
     "format": "/usr/bin/env emacs --script ./format.el"
   },
   "dependencies": {
-    "@platforma-open/my-org.block-boilerplate.software": "workspace:*"
+    "@platforma-open/my-org.block-boilerplate.software": "workspace:*",
+    "@platforma-sdk/workflow-tengo": "catalog:"
   },
   "devDependencies": {
     "@platforma-sdk/tengo-builder": "catalog:",
-    "@platforma-sdk/workflow-tengo": "catalog:",
-    "@platforma-open/milaboratories.software-small-binaries": "^1.15.7",
     "@platforma-sdk/test": "catalog:",
     "vitest": "catalog:"
   }
