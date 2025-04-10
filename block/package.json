@@ -2,13 +2,18 @@
   "name": "@platforma-open/my-org.block-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "build": "rm -rf block-pack/* && block-tools pack"
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
+    "build": "rm -rf ./block-pack && block-tools pack",
+    "mark-stable": "block-tools mark-stable -r 's3://milab-euce1-prod-pkgs-s3-block-registry/pub/releases/?region=eu-central-1'",
+    "prepublishOnly": "block-tools pack && block-tools publish -r 's3://milab-euce1-prod-pkgs-s3-block-registry/pub/releases/?region=eu-central-1'",
+    "do-pack": "rm -f *.tgz && block-tools pack && pnpm pack && mv *.tgz package.tgz"
   },
   "files": [
     "index.d.ts",
     "index.js"
   ],
   "dependencies": {
+    "@platforma-sdk/model": "catalog:",
     "@platforma-open/my-org.block-boilerplate.workflow": "workspace:*",
     "@platforma-open/my-org.block-boilerplate.model": "workspace:*",
     "@platforma-open/my-org.block-boilerplate.ui": "workspace:*"
@@ -22,8 +27,7 @@
     "meta": {
       "title": "Block Title",
       "logo": "file:../logos/block-logo.png",
-      "url": "https://github.com/milaboratory/platforma-block-boilerplate",
-      "docs": "https://github.com/milaboratory/platforma-block-boilerplate/docs",
+      "url": "https://github.com/platforma-open/my-org.block-boilerplate",
       "support": "mailto:support@milaboratories.com",
       "description": "Simple Hello World block that can be used as a boilerplate for newly created blocks.",
       "longDescription": "file:../docs/description.md",
@@ -32,7 +36,7 @@
       "organization": {
         "name": "MiLaboratories Inc",
         "url": "https://milaboratories.com/",
-        "logo": "file:../logos/milaboratories.png"
+        "logo": "file:../logos/organization-logo.png"
       }
     }
   },
