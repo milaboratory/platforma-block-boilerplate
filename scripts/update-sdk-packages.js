@@ -53,7 +53,7 @@ async function updatePackages() {
     }
     
     const catalog = workspaceConfig.catalog;
-    const sdkPackages = Object.keys(catalog).filter(pkg => pkg.startsWith('@platforma-sdk/'));
+    const sdkPackages = Object.keys(catalog).filter(pkg => pkg.startsWith('@platforma-sdk/') || pkg.startsWith('@milaboratories/'));
     
     console.log('Checking for updates to @platforma-sdk packages...');
     
