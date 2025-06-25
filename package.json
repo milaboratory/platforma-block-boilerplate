@@ -1,12 +1,10 @@
 {
-  "name": "@platforma-open/my-org.block-boilerplate",
-  "version": "1.0.0",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
     "build": "turbo run build",
     "build:dev": "env PL_PKG_DEV=local turbo run build",
     "test": "env PL_PKG_DEV=local turbo run test --concurrency 1 --env-mode=loose",
-    "test:dry-run": "turbo run test --dry-run=json",
+    "test:dry-run": "env PL_PKG_DEV=local turbo run test --dry-run=json",
     "mark-stable": "turbo run mark-stable",
     "watch": "turbo watch build",
     "changeset": "changeset",
