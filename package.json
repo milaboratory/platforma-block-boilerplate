@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
     "build": "turbo run build",
     "build:dev": "env PL_PKG_DEV=local turbo run build",
     "test": "env PL_PKG_DEV=local turbo run test --concurrency 1 --env-mode=loose",
@@ -9,7 +8,7 @@
     "watch": "turbo watch build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "update-sdk": "pl-blocks-deps-updater"
+    "update-sdk": "block-tools update-deps"
   },
   "files": [
     "index.d.ts",
@@ -18,7 +17,7 @@
   "devDependencies": {
     "turbo": "catalog:",
     "@changesets/cli": "catalog:",
-    "@platforma-sdk/blocks-deps-updater": "catalog:"
+    "@platforma-sdk/block-tools": "catalog:"
   },
   "packageManager": "pnpm@9.12.0"
 }
