@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Block Workflow",
   "scripts": {
-    "build": "rm -rf dist && pl-tengo check && pl-tengo build",
+    "build": "shx rm -rf dist && pl-tengo check && pl-tengo build",
     "test": "vitest",
     "format": "/usr/bin/env emacs --script ./format.el"
   },
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@platforma-sdk/tengo-builder": "catalog:",
     "@platforma-sdk/test": "catalog:",
-    "vitest": "catalog:"
+    "vitest": "catalog:",
+    "shx": "catalog:"
   }
 }
