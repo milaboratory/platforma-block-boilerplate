@@ -1,5 +1,11 @@
 {
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
   "scripts": {
+    "fmt": "turbo run fmt",
+    "check": "turbo run check",
     "build": "turbo run build",
     "build:dev": "env PL_PKG_DEV=local turbo run build",
     "test": "env PL_PKG_DEV=local turbo run test --concurrency 1 --env-mode=loose",
@@ -10,25 +16,21 @@
     "version-packages": "changeset version",
     "update-sdk": "block-tools update-deps"
   },
-  "files": [
-    "index.d.ts",
-    "index.js"
-  ],
   "devDependencies": {
-    "shx": "catalog:",
-    "turbo": "catalog:",
     "@changesets/cli": "catalog:",
+    "@milaboratories/ts-builder": "catalog:",
     "@platforma-sdk/block-tools": "catalog:",
-    "@milaboratories/ts-builder": "catalog:"
+    "shx": "catalog:",
+    "turbo": "catalog:"
+  },
+  "peerDependencies": {
+    "oxfmt": "*",
+    "oxlint": "*"
   },
   "packageManager": "pnpm@9.12.0",
   "pnpm": {
     "overrides": {
       "@milaboratories/ts-builder": "link:/Users/aleksandr/GIT/MILAB/platforma/tools/ts-builder/"
     }
-  },
-  "peerDependencies": {
-    "oxlint": "*",
-    "oxfmt": "*"
   }
 }
