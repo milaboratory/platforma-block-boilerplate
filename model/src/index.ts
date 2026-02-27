@@ -1,5 +1,5 @@
-import type { InferOutputsType } from '@platforma-sdk/model';
-import { BlockModel } from '@platforma-sdk/model';
+import type { InferOutputsType } from "@platforma-sdk/model";
+import { BlockModel } from "@platforma-sdk/model";
 
 export type BlockArgs = {
   name?: string;
@@ -9,11 +9,11 @@ export const model = BlockModel.create()
 
   .withArgs<BlockArgs>({})
 
-  .output('tengoMessage', (ctx) => ctx.outputs?.resolve('tengoMessage')?.getDataAsJson())
+  .output("tengoMessage", (ctx) => ctx.outputs?.resolve("tengoMessage")?.getDataAsJson())
 
-  .output('pythonMessage', (ctx) => ctx.outputs?.resolve('pythonMessage')?.getDataAsString())
+  .output("pythonMessage", (ctx) => ctx.outputs?.resolve("pythonMessage")?.getDataAsString())
 
-  .sections((_ctx) => [{ type: 'link', href: '/', label: 'Main' }])
+  .sections((_ctx) => [{ type: "link", href: "/", label: "Main" }])
 
   .done();
 
