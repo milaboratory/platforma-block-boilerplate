@@ -1,20 +1,22 @@
 {
   "name": "@platforma-open/my-org.block-boilerplate.test",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "description": "Block tests",
+  "keywords": [],
+  "files": [],
   "type": "module",
   "scripts": {
     "test": "vitest --passWithNoTests"
   },
-  "files": [],
-  "keywords": [],
   "dependencies": {
     "this-block": "workspace:@platforma-open/my-org.block-boilerplate@*"
   },
   "devDependencies": {
-    "@platforma-sdk/test": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "@platforma-sdk/test": "catalog:"
+  },
+  "peerDependencies": {
+    "typescript": "*",
+    "vitest": "*"
   }
 }

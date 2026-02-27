@@ -1,8 +1,8 @@
 {
   "name": "@platforma-open/my-org.block-boilerplate.workflow",
   "version": "1.0.0",
-  "type": "module",
   "description": "Block Workflow",
+  "type": "module",
   "scripts": {
     "build": "shx rm -rf dist && pl-tengo check && pl-tengo build",
     "test": "vitest",
@@ -14,7 +14,9 @@
   },
   "devDependencies": {
     "@platforma-sdk/tengo-builder": "catalog:",
-    "@platforma-sdk/test": "catalog:",
-    "vitest": "catalog:"
+    "@platforma-sdk/test": "catalog:"
+  },
+  "peerDependencies": {
+    "vitest": "*"
   }
 }
