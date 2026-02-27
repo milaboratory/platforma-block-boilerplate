@@ -26,5 +26,9 @@
     "overrides": {
       "@milaboratories/ts-builder": "link:/Users/aleksandr/GIT/MILAB/platforma/tools/ts-builder/"
     }
+  },
+  "peerDependencies": {
+    "oxlint": "*",
+    "oxfmt": "*"
   }
 }
