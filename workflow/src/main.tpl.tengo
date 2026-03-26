@@ -9,7 +9,7 @@ wf.body(func(args) {
 		arg(args.name).
 		saveStdoutContent().
 		run()
-	pythonMessage := python.getStdoutFileContent()
+	pythonMessage := python.getStdoutContent()
 
 	tengoMessage := "Hello from Tengo, " + args.name + "!"
 
