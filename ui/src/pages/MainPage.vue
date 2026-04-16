@@ -7,11 +7,7 @@ const app = useApp();
 
 <template>
   <PlBlockPage>
-    <PlTextField
-      v-model="app.model.args.name"
-      label="Enter your name"
-      :clearable="() => undefined"
-    />
+    <PlTextField v-model="app.model.data.name" label="Enter your name" :clearable="() => ''" />
 
     <PlAlert v-if="app.model.outputs.tengoMessage" type="success">
       {{ app.model.outputs.tengoMessage }}

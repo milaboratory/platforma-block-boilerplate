@@ -1,13 +1,15 @@
 import type { InferOutputsType } from "@platforma-sdk/model";
-import { BlockModel } from "@platforma-sdk/model";
+import { BlockModelV3, DataModelBuilder } from "@platforma-sdk/model";
 
-export type BlockArgs = {
-  name?: string;
+export type BlockData = {
+  name: string;
 };
 
-export const model = BlockModel.create()
+const dataModel = new DataModelBuilder().from<BlockData>("v1").init(() => ({ name: "" }));
 
-  .withArgs<BlockArgs>({})
+export const platforma = BlockModelV3.create(dataModel)
+
+  .args((data) => ({ name: data.name }))
 
   .output("tengoMessage", (ctx) => ctx.outputs?.resolve("tengoMessage")?.getDataAsJson())
 
@@ -17,4 +19,4 @@ export const model = BlockModel.create()
 
   .done();
 
-export type BlockOutputs = InferOutputsType<typeof model>;
+export type BlockOutputs = InferOutputsType<typeof platforma>;
